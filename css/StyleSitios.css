@@ -1,0 +1,109 @@
+﻿body {
+    background-image: url('../img/tq.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    text-align:center;
+}
+
+.encabezado {
+    background-color: #AC1F2D;
+    width: 2% 100%;
+    /*text-align: center;*/
+}
+
+.textoSimple {
+    color: white;
+}
+
+.textoResaltado {
+    color: black;
+}
+
+.alinDerecha {
+    text-align: right;
+}
+
+.alinCentro {
+    text-align: center;
+    width: 33%;
+}
+
+.alinJustify{
+    text-align:justify;
+}
+
+/*PARA LA TABLA */
+.custom-table {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    border-collapse: collapse; /* Colapsa los bordes para evitar espacios */
+    margin-top: 20px; /* Separación desde el contenido superior */
+}
+
+    .custom-table th, .custom-table td {
+        /*border: 1px solid #ddd;*/ /* Borde para las celdas */
+        padding: 8px; /* Espacio interior */
+        text-align: center; /* Alineación del texto */
+    }
+
+    .custom-table th {
+        background-color: #f2f2f2; /* Color de fondo para el encabezado */
+        font-weight: bold; /* Negrita para el texto del encabezado */
+    }
+
+.centered-cell {
+    text-align: center; /* Centra horizontalmente */
+    vertical-align: middle; /* Centra verticalmente */
+    height: 100px; /* Ajusta la altura si es necesario */
+}
+
+/*e.e*/
+.container {
+    text-align: center;
+    background-color: #212529;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.info {
+    text-align: justify;
+    background-color: #d0d0d0;
+    padding: 20px;
+    border-radius: 20px;
+    /*box-shadow: 0 0 10px #616161;*/
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.content-section {
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #3c3c3c; /* Línea divisoria */
+}
+
+    .content-section h1, .content-section h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .content-section .lead, .content-section p {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+        text-align:justify;
+    }
+
+.btn-primary {
+    background-color: #008B8B;
+    border-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
