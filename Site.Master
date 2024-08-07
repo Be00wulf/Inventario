@@ -49,7 +49,12 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link textoSimple" runat="server" href="~/">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link textoSimple" runat="server" href="~/About">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link textoSimple" runat="server" href="~/Login">Log In</a></li>
+                        <li class="nav-item"><a class="nav-link textoSimple" runat="server" href="~/PuntoDeVenta/Login.aspx">LogIn</a></li>
+                        <li class="nav-item"><a class="nav-link textoSimple" runat="server" href="~/PuntoDeVenta/Inventario.aspx">Inventario</a></li>
+                        <li class="nav-item"><a class="nav-link textoSimple" runat="server" href="~/PuntoDeVenta/Registros.aspx">Registros</a></li>
+                        <li class="nav-item"><a class="nav-link textoSimple" runat="server" href="~/PuntoDeVenta/NuevoUsuario.aspx">NuevoUsuario</a></li>
+
+
                     </ul>
                 </div>
             </div>

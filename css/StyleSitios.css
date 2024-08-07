@@ -18,6 +18,10 @@ main{
     color: white;
 }
 
+.textoAzul {
+    color: #191970;
+}
+
 .textoResaltado {
     color: black;
 }
@@ -106,4 +110,22 @@ main{
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
+}
+
+    .btn-primary:disabled {
+        background-color: #ADD8E6;
+        color: black;
+        cursor: not-allowed;
+    }
+
+.estilotxtBox {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 98%;
+    padding: 7px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
 }

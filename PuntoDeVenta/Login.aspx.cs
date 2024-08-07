@@ -26,7 +26,7 @@ namespace PuntoDeVenta.PuntoDeVenta
             {
                 // Guardar el nombre de usuario en la sesión y redirigir
                 Session["Username"] = username;
-                Response.Redirect("Perfil.aspx");
+                //Response.Redirect("Perfil.aspx");
             }
             else
             {
@@ -38,7 +38,7 @@ namespace PuntoDeVenta.PuntoDeVenta
         private bool AuthenticateUser(string username, string password)
         {
             // Ruta al archivo de usuarios
-            string filePath = Server.MapPath("~/txt/usuarios.txt");
+            string filePath = Server.MapPath("~/txt/Usuarios.txt");
 
             // Leer el archivo de usuarios
             foreach (string line in File.ReadLines(filePath))

@@ -9,7 +9,7 @@
                 <h1 id="aspnetTitle">ASP.NET</h1>
                 <p >ASP.NET es un marco de desarrollo gratuito para construir sitios web y 
                     aplicaciones web geniales utilizando HTML, CSS y JavaScript.</p>
-                <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Conoce más &raquo;</a></p>
+                <p><a href="http://www.asp.net" class="btn btn-primary ">Conoce más &raquo;</a></p>
             </section>
 
             <section class="content-section" aria-labelledby="inventorySystemTitle">

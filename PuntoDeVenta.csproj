@@ -123,7 +123,10 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="PuntoDeVenta\WebForm1.aspx" />
+    <Content Include="PuntoDeVenta\Inventario.aspx" />
+    <Content Include="PuntoDeVenta\Login.aspx" />
+    <Content Include="PuntoDeVenta\NuevoUsuario.aspx" />
+    <Content Include="PuntoDeVenta\Registros.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -180,6 +183,8 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="txt\Productos1.txt" />
+    <Content Include="txt\Usuarios.txt" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -213,12 +218,33 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PuntoDeVenta\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="PuntoDeVenta\Inventario.aspx.cs">
+      <DependentUpon>Inventario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PuntoDeVenta\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="PuntoDeVenta\Inventario.aspx.designer.cs">
+      <DependentUpon>Inventario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoDeVenta\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PuntoDeVenta\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoDeVenta\NuevoUsuario.aspx.cs">
+      <DependentUpon>NuevoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PuntoDeVenta\NuevoUsuario.aspx.designer.cs">
+      <DependentUpon>NuevoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PuntoDeVenta\Registros.aspx.cs">
+      <DependentUpon>Registros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PuntoDeVenta\Registros.aspx.designer.cs">
+      <DependentUpon>Registros.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
