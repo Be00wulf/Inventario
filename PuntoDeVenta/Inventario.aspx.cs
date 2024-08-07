@@ -24,6 +24,7 @@ namespace PuntoDeVenta.PuntoDeVenta
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //txtAstr();
             tablaProducto.Columns.Add("CODIGO");
             tablaProducto.Columns.Add("PRODUCTO");
             tablaProducto.Columns.Add("PRECIOcompra");
@@ -33,6 +34,10 @@ namespace PuntoDeVenta.PuntoDeVenta
             if (!IsPostBack)
             {
                 btnOff();
+            }
+            else
+            {
+                txtAstr();
             }
 
             StreamReader leer = new StreamReader(Server.MapPath("~/txt/Productos1.txt"));
@@ -92,7 +97,7 @@ namespace PuntoDeVenta.PuntoDeVenta
                 {
                     string[] campos = linea.Split(',');
 
-                    if (campos[0] == TextBoxCodigo.Text)
+                    if (campos[0] == txtCodigo)
                     {
                         prodEncontrado = true;
                         // No agregar esta línea a las nuevas líneas, es decir, se elimina
@@ -182,7 +187,7 @@ namespace PuntoDeVenta.PuntoDeVenta
                     btnEDITAR.Enabled = true;
                     btnELIMINAR.Enabled = true;
 
-                    // Actualizar los controles de la interfaz de usuario
+                    // muestra los datos correspondientes
                     TextBoxCodigo.Text = txtCodigo;
                     TextBoxProducto.Text = txtProducto;
                     TextBoxPcompra.Text = txtPcompra;
@@ -235,10 +240,14 @@ namespace PuntoDeVenta.PuntoDeVenta
                 {
                     string[] campos = lineas[i].Split(',');
 
-                    if (campos[0] == TextBoxCodigo.Text)
+                    if (campos[0] == txtCodigo)
                     {
                         // Actualizar los campos en la línea
-                        lineas[i] = TextBoxCodigo.Text + "," + TextBoxProducto.Text + "," + TextBoxPcompra.Text + "," + TextBoxPventa.Text + "," + TextBoxExistencia.Text;
+                        lineas[i] = txtCodigo + "," + 
+                            txtProducto + "," + 
+                            txtPcompra + "," + 
+                            txtPventa + "," + 
+                            txtExist;
                         prodEncontrado = true;
                         break;
                     }
