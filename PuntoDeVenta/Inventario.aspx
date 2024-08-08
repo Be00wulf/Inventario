@@ -12,7 +12,7 @@
                     <tr>
                         <td class="alinJustify">CODIGO: </td>
                         <td class="auto-style4">
-                            <asp:TextBox ID="TextBoxCodigo" runat="server" class="estilotxtBox" placeholder="Ej: 12AA"></asp:TextBox>
+                            <asp:TextBox ID="TextBoxCodigo" runat="server" class="estilotxtBox" type="number" placeholder="Ej: 12AA"></asp:TextBox>
                         </td>
                     </tr>
 
@@ -26,21 +26,21 @@
                     <tr>
                         <td class="auto-style2">PRECIO DE COMPRA: </td>
                         <td class="auto-style4">
-                            <asp:TextBox ID="TextBoxPcompra" runat="server" CssClass="estilotxtBox" placeholder="Ej: 555.22"></asp:TextBox>
+                            <asp:TextBox ID="TextBoxPcompra" runat="server" type="number" CssClass="estilotxtBox" placeholder="Ej: 555.22"></asp:TextBox>
                         </td>
                     </tr>
 
                     <tr>
                         <td class="auto-style5">PRECIO DE VENTA: </td>
                         <td class="auto-style6">
-                            <asp:TextBox ID="TextBoxPventa" runat="server" CssClass="estilotxtBox" placeholder="Ej: 600.55"></asp:TextBox>
+                            <asp:TextBox ID="TextBoxPventa" runat="server" type="number" CssClass="estilotxtBox" placeholder="Ej: 600.55"></asp:TextBox>
                         </td>
                     </tr>
 
                     <tr>
                         <td class="auto-style2">EXISTENCIA: </td>
                         <td class="auto-style4">
-                            <asp:TextBox ID="TextBoxExistencia" runat="server" CssClass="estilotxtBox" placeholder="Ej: 12"></asp:TextBox>
+                            <asp:TextBox ID="TextBoxExistencia" type="number" runat="server" CssClass="estilotxtBox" placeholder="Ej: 12"></asp:TextBox>
                         </td>
                     </tr>
                 </table>
@@ -68,7 +68,7 @@
                     <tr>
                         <td class="alineaCentro">
                             <asp:Button ID="ButtonBuscar" runat="server" CssClass="btn-primary" Text="BUSCAR CODIGO" OnClick="ButtonBuscar_Click"  />
-                            &nbsp;<asp:TextBox ID="TextBoxBuscar" runat="server" CssClass="estilotxtBox" placeholder="Ingresar CODIGO" ></asp:TextBox>
+                            &nbsp;<asp:TextBox ID="TextBoxBuscar" type="number" runat="server" CssClass="estilotxtBox" placeholder="Ingresar CODIGO" ></asp:TextBox>
 
                         </td>
                     </tr>
@@ -76,6 +76,15 @@
                      <tr>
                          <td class="alinD">
                              &nbsp;<asp:Button ID="ButtonLimpiar" runat="server" CssClass="btn-primary " Text="LIMPIAR CAMPOS" OnClick="ButtonLimpiar_Click"   />
+                             <br />
+                             <br />
+                             <asp:Button ID="ButtonReg" runat="server" CssClass="btn-primary " Text="VER REGISTROS" OnClick="ButtonReg_Click"   />
+                             <br />
+                             <br />
+                             <asp:Button ID="ButtonINGnuevo" runat="server" CssClass="btn-primary " Text="INGRESAR NUEVO USUARIO" OnClick="ButtonINGnuevo_Click"/>
+                             <br />
+                             <br />
+                             <asp:Button ID="ButtonINGnuevo0" runat="server" CssClass="btn-primary " Text="CERRAR SESION" OnClick="ButtonINGnuevo0_Click"/>
                          </td>
                      </tr>
                 </table>

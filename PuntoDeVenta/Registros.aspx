@@ -20,6 +20,11 @@
                     <td>
                         <asp:GridView ID="GridView1" runat="server">
                         </asp:GridView>
+                        <br />
+                            <asp:Button ID="ButtonNuevoIngreso" class="btn-primary" runat="server" Text="NUEVO REGISTRO" OnClick="ButtonNuevoIngreso_Click1" />
+                        <br />
+                        <br />
+                             <asp:Button ID="ButtonInvent" runat="server" CssClass="btn-primary " Text="INVENTARIO" OnClick="ButtonInvent_Click"   />
                     </td>
                 </tr>
 

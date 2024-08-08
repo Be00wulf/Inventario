@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -24,6 +25,12 @@ namespace PuntoDeVenta.PuntoDeVenta
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["Username"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+
             //txtAstr();
             tablaProducto.Columns.Add("CODIGO");
             tablaProducto.Columns.Add("PRODUCTO");
@@ -215,6 +222,25 @@ namespace PuntoDeVenta.PuntoDeVenta
             limpiar();
         }
 
+        protected void ButtonReg_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Registros.aspx");
+        }
+
+        protected void ButtonINGnuevo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("NuevoUsuario.aspx");
+        }
+
+        protected void ButtonINGnuevo0_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Session.Abandon();
+
+            // Redirigir al login o página principal
+            Response.Redirect("Login.aspx");
+        }
+
         protected void btnEDITAR_Click(object sender, EventArgs e)
         {
             if (
@@ -270,35 +296,6 @@ namespace PuntoDeVenta.PuntoDeVenta
                 // Manejo del caso cuando el archivo no existe
                 Response.Write("<script language=javascript>alert('El archivo de datos no existe')</script>");
             }
-
-            //foreach (DataRow fila in tablaProducto.Rows)
-            //{
-            //    if (fila[0].ToString() == txtCodigo)
-            //    {
-            //        fila[0] = txtCodigo;
-            //        fila[1] = txtProducto;
-            //        fila[2] = txtPcompra;
-            //        fila[3] = txtPventa;
-            //        fila[4] = txtExist;
-            //        prodEncontrado = true;
-
-            //        Response.Write("<script language=javascript>alert('Informacion actualizada exitosamente')</script>");
-            //        //GridView1.DataBind();
-            //        limpiar();
-            //        break;
-            //    }
-
-            //}
-            ////actualizando datos en el txt              //FALSE PARA no REESCRIBIR     
-            ////new StreamWriter(Server.MapPath("archivos/datos1.txt"), true);
-            //StreamWriter escribir = new StreamWriter(Server.MapPath("~/txt/Productos1.txt"), false);
-
-            //foreach (DataRow fila in tablaProducto.Rows)
-            //{
-            //    string linea = fila[0].ToString() + "," + fila[1].ToString() + "," + fila[2].ToString() + "," + fila[3].ToString() + "," + fila[4].ToString();
-            //    escribir.WriteLine(linea);
-            //}
-            //escribir.Close();
         }
 
         protected void btnGUARDAR_Click(object sender, EventArgs e)

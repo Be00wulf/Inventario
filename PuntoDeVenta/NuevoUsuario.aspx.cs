@@ -12,6 +12,11 @@ namespace PuntoDeVenta.PuntoDeVenta
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Username"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
+
             lblMessage.Text = "";
         }
 
@@ -68,5 +73,14 @@ namespace PuntoDeVenta.PuntoDeVenta
             }
         }
 
+        protected void ButtonReg_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Registros.aspx");
+        }
+
+        protected void ButtonInvent_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Inventario.aspx");
+        }
     }
 }

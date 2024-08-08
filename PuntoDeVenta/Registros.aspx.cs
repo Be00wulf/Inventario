@@ -14,6 +14,10 @@ namespace PuntoDeVenta.PuntoDeVenta
         DataTable tablaProducto = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Username"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
 
             tablaProducto.Columns.Add("CODIGO");
             tablaProducto.Columns.Add("PRODUCTO");
@@ -36,6 +40,19 @@ namespace PuntoDeVenta.PuntoDeVenta
             GridView1.DataBind();
         }
 
-        
+        protected void ButtonNuevoIngreso_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ButtonNuevoIngreso_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("NuevoUsuario.aspx");
+        }
+
+        protected void ButtonInvent_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Inventario.aspx");
+        }
     }
 }

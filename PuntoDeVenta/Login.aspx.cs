@@ -26,7 +26,7 @@ namespace PuntoDeVenta.PuntoDeVenta
             {
                 // Guardar el nombre de usuario en la sesión y redirigir
                 Session["Username"] = username;
-                //Response.Redirect("Perfil.aspx");
+                Response.Redirect("Inventario.aspx");
             }
             else
             {

@@ -39,9 +39,14 @@
 
                     <tr>
                         <td>
-                            <asp:Button ID="ButtonNuevoIngreso" class="btn-primary" runat="server" Text="Nuevo registro" OnClick="ButtonNuevoIngreso_Click" />
+                            <asp:Button ID="ButtonNuevoIngreso" class="btn-primary" runat="server" Text="NUEVO REGISTRO" OnClick="ButtonNuevoIngreso_Click" />
                             <br />
                             <asp:Label ID="lblMessage" class="textoAzul" runat="server" Text="Registro"></asp:Label>
+                            <br />
+                             <asp:Button ID="ButtonReg" runat="server" CssClass="btn-primary " Text="VER DATOS" OnClick="ButtonReg_Click"   />
+                            <br />
+                            <br />
+                             <asp:Button ID="ButtonInvent" runat="server" CssClass="btn-primary " Text="INVENTARIO" OnClick="ButtonInvent_Click"   />
                         </td>
                     </tr>
                 </table>
